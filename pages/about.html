@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Fernando - Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  </head>
+  <body class="flex justify-center items-center h-[100vh]" id="background">
+    <header
+      class="flex gap-5 justify-center flex-col items-center bg-neutral-800 h-[510px] w-[650px] rounded-[18px] border-white border-solid border-[1px]"
+    >
+      <nav
+        class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] w-[380px] h-[40px]"
+      >
+        <ul class="flex flex-row gap-5 text-white">
+          <li class="transition-colors duration-300 hover:text-neutral-400">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="transition-colors duration-300 hover:text-neutral-400">
+            <a href=".">About</a>
+          </li>
+          <li class="transition-colors duration-300 hover:text-neutral-400">
+            <a href="./skills.html">Skills</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="">
+        <img class="h-40 w-max rounded-[20px] border-white border-solid border-[1px]" src="../assets/banner.gif" alt="" />
+      </div>
+
+      <div class="flex justify-center flex-col text-center">
+        <h1 class="text-white font-extrabold text-3xl pb-[12px]">About me</h1>
+        <p class="tracking-tighter font-mono text-white flex justify-center">
+          Olá! Me chamo Kevin, tenho 17 anos e atualmente sou estudante
+          autodidata de Programação/TI, além de estar completando o 3° Ano do
+          Ensino Médio. Sou um jovem apaixonado por tecnologia e desenvolvimento
+          de sofware/soluções para variados tipos de problemas, faço alguns freelas de vez em quando :)
+        </p>
+      </div>
+      <div>
+        <h3 class="text-neutral-500">Developed by Kevin</h3>
+      </div>
+    </header>
+    <script>
+      VANTA.WAVES({
+        el: "#background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x0,
+      });
+    </script>
+  </body>
+</html>
