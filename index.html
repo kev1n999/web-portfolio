@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kevin Fernando - Developer</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
   </head>
-  <body class="bg-zinc-800 flex justify-center items-center h-[100vh]">
-    <header class="flex justify-center flex-col items-center bg-neutral-800 h-[400px] w-[600px] rounded-[18px]">
+  <body class="flex justify-center items-center h-[100vh]" id="background">
+    <header
+      class="flex justify-center flex-col items-center bg-neutral-800 h-[400px] w-[600px] rounded-[18px] border-white border-solid border-[1px]"
+    >
       <div class="flex justify-center p-10 pb-4">
         <img
           src="./assets/profile.jpg"
@@ -18,14 +22,14 @@
       <div>
         <h1 class="text-3xl font-mono text-white flex justify-center">
           <img
-            src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=black&width=435&lines=Olá%2C+eu+sou+o+Kevin!;"
+            src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=black&width=250&lines=Hi!%2C+I'm+Kevin!;"
             alt=""
-            class="pl-30"
+            class="pl-[40px]"
           />
         </h1>
       </div>
       <div>
-        <p class="text-slate-400 text-lg text-center ">Desenvolvedor</p>
+        <p class="text-slate-400 text-lg text-center">Desenvolvedor</p>
       </div>
 
       <div class="flex justify-center gap-1 p-2">
@@ -54,5 +58,18 @@
         </div>
       </div>
     </header>
+    <script>
+      VANTA.WAVES({
+        el: "#background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x0,
+      });
+    </script>
   </body>
 </html>
