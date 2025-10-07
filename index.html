@@ -12,11 +12,27 @@
     <header
       class="flex justify-center flex-col items-center bg-neutral-800 h-[400px] w-[600px] rounded-[18px] border-white border-solid border-[1px]"
     >
+      <nav
+        class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] w-[380px] h-[40px]"
+      >
+        <ul class="flex flex-row gap-5 text-white">
+          <li class="transition-colors duration-300 hover:text-neutral-400">
+            <a href="">About</a>
+          </li>
+          <li class="transition-colors duration-300 hover:text-neutral-400">
+            <a href="">Technologies</a>
+          </li>
+          <li class="transition-colors duration-300 hover:text-neutral-400">
+            <a href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
       <div class="flex justify-center p-10 pb-4">
         <img
           src="./assets/profile.jpg"
           alt="my-photo"
-          class="size-30 rounded-full border-neutral-900 border-solid border-2"
+          class="size-30 rounded-full border-black border-solid border-2"
         />
       </div>
       <div>
@@ -29,7 +45,7 @@
         </h1>
       </div>
       <div>
-        <p class="text-slate-400 text-lg text-center">Desenvolvedor</p>
+        <p class="text-slate-400 text-lg text-center">Developer</p>
       </div>
 
       <div class="flex justify-center gap-1 p-2">
@@ -56,6 +72,10 @@
             class="size-10 transform transition duration-75 hover:scale-95 cursor-pointer"
           />
         </div>
+      </div>
+
+      <div>
+        <h3 class="text-neutral-500">Developed by Kevin</h3>
       </div>
     </header>
     <script>
