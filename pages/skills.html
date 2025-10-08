@@ -1,151 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Fernando - Developer</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-  </head>
-  <body class="flex justify-center items-center h-[100vh]" id="background">
-    <header
-      class="flex justify-center flex-col items-center bg-neutral-800 h-[905px] md:h-[590px] w-[380px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]"
-    
-      >
-      <nav
-        class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] h-[40px] w-[300px] mt-2 md:w-[380px]"
-      >
-        <ul class="flex flex-row gap-5 text-white">
-          <li class="transition-colors duration-300 hover:text-neutral-400">
-            <a href="../index.html">Home</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Fernando - Developer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+
+<body class="flex justify-center items-center h-[100vh]" id="background">
+  <header
+    class="flex justify-center flex-col items-center bg-neutral-800 h-[905px] md:h-[590px] w-[380px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
+    <nav
+      class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] h-[40px] w-[300px] mt-2 md:w-[380px]">
+      <ul class="flex flex-row gap-5 text-white">
+        <li class="transition-colors duration-300 hover:text-neutral-400">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="transition-colors duration-300 hover:text-neutral-400">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="transition-colors duration-300 hover:text-neutral-400">
+          <a href="./skills.html">Skills</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex justify-center flex-col items-center">
+      <h1 class="text-3xl text-white font-extrabold mt-[6px] mb-[10px]">
+        Skills
+      </h1>
+      <span class="text-white tracking-tighter text-center">
+        Tenho uma base sólida de conhecimento geral tanto em Front-end quanto
+        em Back-end, buscando sempre evoluir e adquirir um conhecimento
+        cada vez mais profundo em ambas as stacks.
+      </span>
+      <div class="border-b-neutral-800 w-full mb-[12px] mt-[12px]"></div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-5">
+      <div class="bg-neutral-900 h-full w-[250px] rounded-[20px] border-solid border-[1px] border-white">
+        <h1
+          class="text-white font-extrabold text-3xl text-center pb-[10px] pt-[10px] bg-neutral-800 m-[5px] rounded-b-[12px]">
+          Front-end
+        </h1>
+
+        <ul class="text-white text-center flex flex-col gap-2 items-start m-[16px]">
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/html-5.png" class="size-5" alt="" />
+            <a href="">HTML5</a>
           </li>
-          <li class="transition-colors duration-300 hover:text-neutral-400">
-            <a href="./about.html">About</a>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/css-3.png" class="size-5" alt="" />
+            <a href="">CSS3</a>
           </li>
-          <li class="transition-colors duration-300 hover:text-neutral-400">
-            <a href=".">Skills</a>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/js.png" class="size-5" alt="" />
+            <a href="">JavaScript</a>
+          </li>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/icons8-react-nativo-24.png" class="size-5" alt="" />
+            <a href="">React.js(Estudando)</a>
+          </li>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/icons8-tailwind-css-48.png" class="size-5" alt="" />
+            <a href="">Tailwindcss(Estudando)</a>
           </li>
         </ul>
-      </nav>
-
-      <div class="flex justify-center flex-col items-center">
-        <h1 class="text-3xl text-white font-extrabold mt-[6px] mb-[10px]">
-          Skills
+      </div>
+      <div class="bg-neutral-900 h-full rounded-[20px] w-[250px] border-solid border-[1px] border-white">
+        <h1
+          class="text-white font-extrabold text-3xl text-center pb-[10px] pt-[10px] bg-neutral-800 m-[5px] rounded-b-[12px]">
+          Back-end
         </h1>
-        <span class="text-white tracking-tighter text-center">
-          Tenho uma base sólida de conhecimento geral tanto em Front-end quanto
-          em Back-end, buscando sempre evoluir e adquirir um conhecimento
-          cada vez mais profundo em ambas as stacks.
-        </span>
-        <div class="border-b-neutral-800 w-full mb-[12px] mt-[12px]"></div>
+        <ul class="text-white text-center flex flex-col gap-2 items-start m-[16px]">
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/python.png" class="size-5" alt="" />
+            <a href="">Python</a>
+          </li>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/js.png" class="size-5" alt="" />
+            <a href="">JavaScript</a>
+          </li>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/typescript.png" class="size-5" alt="" />
+            <a href="">TypeScript</a>
+          </li>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/node-js.png" class="size-5" alt="" />
+            <a href="">Node.js</a>
+          </li>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/icons8-expresso-js-50.png" class="size-5 bg-white" alt="" />
+            <a href="">Express.js(Básico)</a>
+          </li>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/sql-server.png" class="size-5 bg-white" alt="" />
+            <a href="">SQL</a>
+          </li>
+        </ul>
       </div>
+    </div>
+    <div class="pt-[16px]">
+      <h3 class="text-neutral-500 mb-[6px]">Developed by Kevin</h3>
+    </div>
+  </header>
+  <script>
+    VANTA.NET({
+      el: "#background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x7a6f79,
+      backgroundColor: 0x90909,
+      points: 8.00
+    })
+  </script>
+</body>
 
-      <div class="flex flex-col md:flex-row justify-center items-center gap-5">
-        <div
-          class="bg-neutral-900 h-full w-[250px] rounded-[20px] border-solid border-[1px] border-white"
-        >
-          <h1
-            class="text-white font-extrabold text-3xl text-center pb-[10px] pt-[10px] bg-neutral-800 m-[5px] rounded-b-[12px]"
-          >
-            Front-end
-          </h1>
-
-          <ul
-            class="text-white text-center flex flex-col gap-2 items-start m-[16px]"
-          >
-            <li class="flex flex-row gap-1 justify-center">
-              <img src="../assets/icons/html-5.png" class="size-5" alt="" />
-              <a href="">HTML5</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img src="../assets/icons/css-3.png" class="size-5" alt="" />
-              <a href="">CSS3</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img src="../assets/icons/js.png" class="size-5" alt="" />
-              <a href="">JavaScript</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img
-                src="../assets/icons/icons8-react-nativo-24.png"
-                class="size-5"
-                alt=""
-              />
-              <a href="">React.js(Estudando)</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img
-                src="../assets/icons/icons8-tailwind-css-48.png"
-                class="size-5"
-                alt=""
-              />
-              <a href="">Tailwindcss(Estudando)</a>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="bg-neutral-900 h-full rounded-[20px] w-[250px] border-solid border-[1px] border-white"
-        >
-          <h1
-            class="text-white font-extrabold text-3xl text-center pb-[10px] pt-[10px] bg-neutral-800 m-[5px] rounded-b-[12px]"
-          >
-            Back-end
-          </h1>
-          <ul
-            class="text-white text-center flex flex-col gap-2 items-start m-[16px]"
-          >
-            <li class="flex flex-row gap-1 justify-center">
-              <img src="../assets/icons/python.png" class="size-5" alt="" />
-              <a href="">Python</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img src="../assets/icons/js.png" class="size-5" alt="" />
-              <a href="">JavaScript</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img src="../assets/icons/typescript.png" class="size-5" alt="" />
-              <a href="">TypeScript</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img src="../assets/icons/node-js.png" class="size-5" alt="" />
-              <a href="">Node.js</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img
-                src="../assets/icons/icons8-expresso-js-50.png"
-                class="size-5 bg-white"
-                alt=""
-              />
-              <a href="">Express.js(Básico)</a>
-            </li>
-            <li class="flex flex-row gap-1 justify-center">
-              <img
-                src="../assets/icons/sql-server.png"
-                class="size-5 bg-white"
-                alt=""
-              />
-              <a href="">SQL</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="pt-[16px]">
-        <h3 class="text-neutral-500 mb-[6px]">Developed by Kevin</h3>
-      </div>
-    </header>
-    <script>
-      VANTA.WAVES({
-        el: "#background",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x0,
-      });
-    </script>
-  </body>
 </html>

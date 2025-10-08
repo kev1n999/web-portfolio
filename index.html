@@ -1,98 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Fernando - Developer</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-  </head>
-  <body class="flex justify-center items-center h-[100vh]" id="background">
-    <header
-      class="flex justify-center flex-col items-center bg-neutral-800 h-[450px] w-[350px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]"
-    >
-      <nav
-        class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] w-[330px] md:w-[380px] h-[40px]"
-      >
-        <ul class="flex flex-row gap-5 text-white">
-          <li class="transition-colors duration-300 hover:text-neutral-400">
-            <a href=".">Home</a>
-          </li>
-          <li class="transition-colors duration-300 hover:text-neutral-400">
-            <a href="./pages/about.html">About</a>
-          </li>
-          <li class="transition-colors duration-300 hover:text-neutral-400">
-            <a href="./pages/skills.html">Skills</a>
-          </li>
-        </ul>
-      </nav>
 
-      <div class="flex justify-center p-10 pb-4">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Fernando - Developer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+</head>
+
+<body class="flex justify-center items-center h-[100vh]" id="background">
+  <header
+    class="flex justify-center flex-col items-center bg-neutral-800 h-[430px] w-[350px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
+    <nav
+      class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] w-[330px] md:w-[380px] h-[40px]">
+      <ul class="flex flex-row gap-5 text-white">
+        <li class="transition-colors duration-300 hover:text-neutral-400">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="transition-colors duration-300 hover:text-neutral-400">
+          <a href="./pages/about.html">About</a>
+        </li>
+        <li class="transition-colors duration-300 hover:text-neutral-400">
+          <a href="./pages/skills.html">Skills</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex justify-center p-10 pb-4">
+      <img src="./assets/profile.jpg" alt="my-photo" class="size-30 rounded-full border-black border-solid border-2" />
+    </div>
+    <div>
+      <h1 class="text-3xl font-mono text-white flex justify-center">
         <img
-          src="./assets/profile.jpg"
-          alt="my-photo"
-          class="size-30 rounded-full border-black border-solid border-2"
-        />
-      </div>
-      <div>
-        <h1 class="text-3xl font-mono text-white flex justify-center">
-          <img
-            src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=black&width=250&lines=Hi!%2C+I'm+Kevin!;"
-            alt=""
-            class="pl-[40px]"
-          />
-        </h1>
-      </div>
-      <div>
-        <p class="text-slate-400 text-lg text-center">Developer</p>
+          src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=black&width=250&lines=Hi!%2C+I'm+Kevin!;"
+          alt="" class="pl-[40px]" />
+      </h1>
+    </div>
+    <div>
+      <p class="text-slate-400 text-lg text-center">Developer</p>
+    </div>
+
+    <div class="flex justify-center gap-1 p-2">
+      <div class="icon">
+        <a href="https://github.com/kev1n999">
+          <img src="./assets/icons/github.png" alt=""
+            class="size-10 transform transition duration-75 hover:scale-95 cursor-pointer" /></a>
       </div>
 
-      <div class="flex justify-center gap-1 p-2">
-        <div class="icon">
-          <a href="https://github.com/kev1n999">
-            <img
-              src="./assets/icons/github.png"
-              alt=""
-              class="size-10 transform transition duration-75 hover:scale-95 cursor-pointer"
-          /></a>
-        </div>
-
-        <div class="icon">
-          <a href="https://discord.com/users/1284623028323483715">
-            <img
-              src="./assets/icons/discord.png"
-              alt=""
-              class="size-10 transform transition duration-75 hover:scale-95 cursor-pointer"
-          /></a>
-        </div>
-
-        <div class="icon">
-          <a href="https://linkedin.com/in/kevin-fdev">
-            <img
-              src="./assets/icons/linkedin.png"
-              alt=""
-              class="size-10 transform transition duration-75 hover:scale-95 cursor-pointer"
-          /></a>
-        </div>
+      <div class="icon">
+        <a href="https://discord.com/users/1284623028323483715">
+          <img src="./assets/icons/discord.png" alt=""
+            class="size-10 transform transition duration-75 hover:scale-95 cursor-pointer" /></a>
       </div>
 
-      <div>
-        <h3 class="text-neutral-500">Developed by Kevin</h3>
+      <div class="icon">
+        <a href="https://linkedin.com/in/kevin-fdev">
+          <img src="./assets/icons/linkedin.png" alt=""
+            class="size-10 transform transition duration-75 hover:scale-95 cursor-pointer" /></a>
       </div>
-    </header>
-    <script>
-      VANTA.WAVES({
-        el: "#background",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x0,
-      });
-    </script>
-  </body>
+    </div>
+
+    <div>
+      <h3 class="text-neutral-500">Developed by Kevin</h3>
+    </div>
+  </header>
+  <script>
+    VANTA.TOPOLOGY({
+      el: "#background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xffffff,
+      backgroundColor: 0x0
+    })
+  </script>
+</body>
+
 </html>
