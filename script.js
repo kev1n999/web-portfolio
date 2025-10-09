@@ -97,9 +97,9 @@ const pages = {
 
   skills: `
 <header
-  class="flex justify-center flex-col items-center bg-neutral-800/70 h-[710px] md:h-[590px] w-[380px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
+  class="flex justify-center flex-col items-center bg-neutral-800/70 h-[710px] md:h-[490px] w-[380px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
   <nav
-    class="flex mb-[12px] justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] h-[40px] w-[300px] mt-2 md:w-[380px]">
+    class="flex mb-6 justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] h-[40px] w-[300px] md:w-[380px]">
     <ul class="flex flex-row gap-5 text-white">
       <li class="transition-colors duration-300 hover:text-neutral-400">
         <a href="#" data-page="home">Home</a>
