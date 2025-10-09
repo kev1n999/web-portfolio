@@ -1,7 +1,7 @@
 const pages = {
   home: `
 <header
-  class="flex justify-center flex-col items-center bg-neutral-800 h-[430px] w-[350px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
+  class="flex justify-center flex-col items-center bg-neutral-800/70 h-[430px] w-[350px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
   <nav
     class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] w-[330px] md:w-[380px] h-[40px]">
     <ul class="flex flex-row gap-5 text-white">
@@ -59,7 +59,7 @@ const pages = {
 
   about: `
 <header
-  class="flex gap-5 justify-center flex-col items-center bg-neutral-800 h-[650px] md:h-[540px] w-[400px] md:w-[650px] rounded-[18px] border-white border-solid border-[1px]">
+  class="flex gap-5 justify-center flex-col items-center bg-neutral-800/70 h-[650px] md:h-[540px] w-[400px] md:w-[650px] rounded-[18px] border-white border-solid border-[1px]">
   <nav
     class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] w-[380px] h-[40px]">
     <ul class="flex flex-row gap-5 text-white">
@@ -97,9 +97,9 @@ const pages = {
 
   skills: `
 <header
-  class="flex justify-center flex-col items-center bg-neutral-800 h-[905px] md:h-[590px] w-[380px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
+  class="flex justify-center flex-col items-center bg-neutral-800/70 h-[710px] md:h-[590px] w-[380px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
   <nav
-    class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] h-[40px] w-[300px] mt-2 md:w-[380px]">
+    class="flex mb-[12px] justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] h-[40px] w-[300px] mt-2 md:w-[380px]">
     <ul class="flex flex-row gap-5 text-white">
       <li class="transition-colors duration-300 hover:text-neutral-400">
         <a href="#" data-page="home">Home</a>
@@ -112,18 +112,6 @@ const pages = {
       </li>
     </ul>
   </nav>
-
-  <div class="flex justify-center flex-col items-center">
-    <h1 class="text-3xl text-white font-extrabold mt-[6px] mb-[10px]">
-      Skills
-    </h1>
-    <span class="text-white tracking-tighter text-center">
-      Tenho uma base sólida de conhecimento geral tanto em Front-end quanto
-      em Back-end, buscando sempre evoluir e adquirir um conhecimento
-      cada vez mais profundo em ambas as stacks.
-    </span>
-    <div class="border-b-neutral-800 w-full mb-[12px] mt-[12px]"></div>
-  </div>
 
   <div class="flex flex-col md:flex-row justify-center items-center gap-5">
     <div class="bg-neutral-900 h-full w-[250px] rounded-[20px] border-solid border-[1px] border-white">
@@ -199,9 +187,9 @@ const pages = {
 const content = document.getElementById("pageContent");
 const music = document.getElementById("bgMusic");
 const playMusic = document.getElementById("toggleMusic");
-const isPlaying = false;
+let isPlaying = false;
 
-document.addEventListener("click", async () => {
+playMusic.addEventListener("click", async () => {
   if (!isPlaying) {
     await music.play();
     playMusic.textContent = "🔇";

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kevin Fernando - Developer</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
 </head>
 
 <body class="flex justify-center items-center h-[100vh]" id="background">
@@ -22,7 +22,7 @@
 
   <div id="pageContent" class="flex justify-center items-center w-full">
     <header
-      class="flex justify-center flex-col items-center bg-neutral-800 h-[430px] w-[350px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
+      class="flex justify-center flex-col items-center bg-neutral-800/70 h-[430px] w-[350px] md:w-[600px] rounded-[18px] border-white border-solid border-[1px]">
       <nav
         class="flex justify-center items-center bg-black border-solid border-[2px] border-neutral-700 rounded-[12px] w-[330px] md:w-[380px] h-[40px]">
         <ul class="flex flex-row gap-5 text-white">
@@ -80,7 +80,7 @@
   </div>
   <script src="./script.js"></script>
   <script>
-    VANTA.TOPOLOGY({
+    VANTA.GLOBE({
       el: "#background",
       mouseControls: true,
       touchControls: true,
@@ -89,7 +89,7 @@
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      color: 0xffffff,
+      color: 0x8d7981,
       backgroundColor: 0x0
     })
   </script>
