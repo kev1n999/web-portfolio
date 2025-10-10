@@ -133,6 +133,10 @@ const pages = {
           <img src="./assets/icons/js.png" class="size-5" alt="" />
           <a href="">JavaScript</a>
         </li>
+          <li class="flex flex-row gap-1 justify-center">
+            <img src="../assets/icons/typescript.png" class="size-5" alt="" />
+            <a href="">TypeScript</a>
+          </li>
         <li class="flex flex-row gap-1 justify-center">
           <img src="./assets/icons/icons8-react-nativo-24.png" class="size-5" alt="" />
           <a href="">React.js(Estudando)</a>
@@ -180,9 +184,8 @@ const pages = {
     <h3 class="text-neutral-500 mb-[6px]">Developed by Kevin</h3>
   </div>
 </header>
-`
-}
-
+`,
+};
 
 const content = document.getElementById("pageContent");
 const music = document.getElementById("bgMusic");
@@ -207,7 +210,7 @@ function attachNavEvents() {
       e.preventDefault();
       const page = li.dataset.page;
       content.innerHTML = pages[page];
-      attachNavEvents(); 
+      attachNavEvents();
     });
   });
 }
